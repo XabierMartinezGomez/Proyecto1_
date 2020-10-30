@@ -10,6 +10,7 @@ class Main(QtWidgets.QMainWindow):
         conexion de eventos con los objetos
         '''
         var.rbtsex = (var.ui.rbtFem, var.ui.rbtMasc)
+        var.chkpago=(var.ui.chkEfect,var.ui.chkTar,var.ui.chkTrans)
         '''
         conexion de eventos con los objetos
         estamos conectando el codigo con la interfaz grafica
@@ -19,7 +20,14 @@ class Main(QtWidgets.QMainWindow):
         var.ui.editDni.editingFinished.connect(clients.Clientes.validoDni)
         for i in var.rbtsex:
             i.toggled.connect(clients.Clientes.selSexo)
+        for i in var.chkpago:
+            i.stateChanged.connect(clients.Clientes.selPago)
+        var.ui.cmbProv.activated[str].connect(clients.Clientes.selProv)
 
+        '''
+        llamada a modulos iniciales
+        '''
+        events.Eventos.cargarProv()
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication([])
