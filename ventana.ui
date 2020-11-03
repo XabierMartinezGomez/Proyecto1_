@@ -363,6 +363,58 @@ background-color: qlineargradient(spread:pad, x1:0.46, y1:0.0343636, x2:0.4595, 
      </rect>
     </property>
    </widget>
+   <widget class="QLabel" name="lblClialta">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>70</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Fecha de alta</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="editClialta">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>70</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnCalendar">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>60</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>img/calendar.jpg</normaloff>img/calendar.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>36</width>
+      <height>36</height>
+     </size>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -391,6 +443,8 @@ background-color: qlineargradient(spread:pad, x1:0.46, y1:0.0343636, x2:0.4595, 
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="calendar.qrc"/>
+ </resources>
  <connections/>
 </ui>

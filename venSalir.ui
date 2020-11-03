@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Dialog</string>
   </property>
-  <widget class="QDialogButtonBox" name="btnBox">
+  <widget class="QDialogButtonBox" name="btnBoxSalir">
    <property name="geometry">
     <rect>
      <x>110</x>
@@ -62,12 +62,13 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap resource="img/nuevo.qrc">:/icono/icono.jpg</pixmap>
+    <pixmap resource="avisosalir.qrc">:/icono/img/icono.jpg</pixmap>
    </property>
   </widget>
  </widget>
  <resources>
   <include location="img/nuevo.qrc"/>
+  <include location="avisosalir.qrc"/>
  </resources>
  <connections/>
 </ui>

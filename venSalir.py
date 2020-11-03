@@ -15,10 +15,10 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(398, 141)
-        self.btnBox = QtWidgets.QDialogButtonBox(Dialog)
-        self.btnBox.setGeometry(QtCore.QRect(110, 100, 156, 23))
-        self.btnBox.setStandardButtons(QtWidgets.QDialogButtonBox.No|QtWidgets.QDialogButtonBox.Yes)
-        self.btnBox.setObjectName("btnBox")
+        self.btnBoxSalir = QtWidgets.QDialogButtonBox(Dialog)
+        self.btnBoxSalir.setGeometry(QtCore.QRect(110, 100, 156, 23))
+        self.btnBoxSalir.setStandardButtons(QtWidgets.QDialogButtonBox.No|QtWidgets.QDialogButtonBox.Yes)
+        self.btnBoxSalir.setObjectName("btnBoxSalir")
         self.lblDeseasalir = QtWidgets.QLabel(Dialog)
         self.lblDeseasalir.setGeometry(QtCore.QRect(80, 20, 311, 71))
         font = QtGui.QFont()
@@ -31,7 +31,7 @@ class Ui_Dialog(object):
         self.lblImgsalir = QtWidgets.QLabel(Dialog)
         self.lblImgsalir.setGeometry(QtCore.QRect(70, 30, 41, 41))
         self.lblImgsalir.setText("")
-        self.lblImgsalir.setPixmap(QtGui.QPixmap(":/icono/icono.jpg"))
+        self.lblImgsalir.setPixmap(QtGui.QPixmap(":/icono/img/icono.jpg"))
         self.lblImgsalir.setObjectName("lblImgsalir")
 
         self.retranslateUi(Dialog)
@@ -41,4 +41,3 @@ class Ui_Dialog(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Dialog"))
         self.lblDeseasalir.setText(_translate("Dialog", "¿Estas seguro que deseas salir de la aplicacion?"))
-import nuevo_rc
